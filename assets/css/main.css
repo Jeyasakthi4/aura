@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+
+header {
+  background-color: #005792;
+  padding: 1px 1px;
+  
+  color: white;
+  
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 60px;
+   
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 10px 10px;
+  height: 50px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+/* Logo fix */
+.logo img {
+  height: 150px; /* Adjusted height */
+  width: auto;
+}
+
+/* Hero section fix */
+.hero {
+  background: linear-gradient(to right, #0072b1, #005f91); /* stronger blue gradient */
+  color: white;
+  text-align: left;
+  padding: 110px 40px;
+}
+
+.hero h1 {
+  font-size: 2.8em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.hero p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin-bottom: 30px;
+  color: #e0f7ff;
+}
+
+.hero .btn {
+  background-color: #00aaff;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  font-size: 1em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #008fcc;
+}
+
+.benefits {
+  padding: 3rem 1rem;
+  background-color: #fff;
+}
+
+.benefits h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #005792;
+}
+
+.benefit-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.benefit-section h3 {
+  margin-top: 2rem;
+  color: #0077b6;
+}
+
+.benefit-section ul {
+  list-style: disc inside;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+footer {
+  background-color: #005792;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .logo {
+    margin-bottom: 1rem;
+    top: 50px;
+    width: 500px
+  }
+ 
+
+
+
+}
